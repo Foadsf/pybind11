@@ -7,15 +7,39 @@ This sections demonstrates the basic features of pybind11. Before getting
 started, make sure that development environment is set up to compile the
 included set of test cases.
 
+Downloading and instalation
+===========================
+
+Linux
+-----
+
+.. code-block:: bash
+    
+    git clone https://github.com/pybind/pybind11.git
+    cd pybind11
+    mkdir build
+    cd build
+    cmake .. 
+    make install
+    cd ..
+    
+the default installation folder will be `/usr/local/include/pybind11`
+
 
 Compiling the test cases
 ========================
 
-Linux/MacOS
+Linux/macOS
 -----------
 
 On Linux  you'll need to install the **python-dev** or **python3-dev** packages as
-well as **cmake**. On Mac OS, the included python version works out of the box,
+well as **cmake**. For example on Ubuntu:
+
+.. code-block:: bash
+
+    sudo apt install python3-dev cmake
+
+On macOS, the included python version works out of the box,
 but **cmake** must still be installed.
 
 After installing the prerequisites, run
